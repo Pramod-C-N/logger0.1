@@ -1,0 +1,109 @@
+﻿10:38:19,229 [CRUDApplication.Controllers.ProductController] INFO - this is get method
+10:38:19,293 [CRUDApplication.Controllers.ProductController] INFO - success
+10:48:55,233 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+10:48:55,280 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+11:22:07,372 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+11:22:07,457 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+11:27:06,074 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+11:27:06,165 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+11:31:19,640 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+11:31:19,742 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:41:40,405 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+14:41:40,543 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:42:29,547 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+14:42:29,551 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:43:42,346 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+14:45:14,476 [CRUDApplication.Controllers.ProductController] INFO - This is the Get Id method.
+14:45:14,565 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:45:19,542 [CRUDApplication.Controllers.ProductController] INFO - This is the Get Id method.
+14:45:19,553 [CRUDApplication.Controllers.ProductController] WARN - No products found.
+14:45:43,910 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+14:47:10,620 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+14:47:10,746 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:49:20,270 [CRUDApplication.Controllers.ProductController] INFO - This is the Get method.
+14:49:20,373 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:49:30,048 [CRUDApplication.Controllers.ProductController] INFO - This is the Get Id method.
+14:49:30,058 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:49:30,080 [CRUDApplication.Controllers.ProductController] INFO - End time21-09-2023 14:49:30
+14:51:32,848 [CRUDApplication.Controllers.ProductController] INFO - This is the Get Id method. Start Time : 21-09-2023 14:51:28
+14:51:32,935 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:51:32,941 [CRUDApplication.Controllers.ProductController] INFO - End time : -00:00:00.0043202
+14:52:46,344 [CRUDApplication.Controllers.ProductController] INFO - This is the Get Id method. Start Time : 21-09-2023 14:52:41
+14:52:46,447 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:52:46,458 [CRUDApplication.Controllers.ProductController] INFO - End time : -00:00:04.6242813
+14:54:28,718 [CRUDApplication.Controllers.ProductController] INFO - This is the Get Id method. Start Time : 21-09-2023 14:54:24
+14:54:28,818 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+14:54:28,821 [CRUDApplication.Controllers.ProductController] INFO - End time : 21-09-2023 14:54:28
+15:13:13,532 [CRUDApplication.Controllers.ProductController] INFO - This is the Get Id method. Start Time : 21-09-2023 15:13:11
+15:13:13,578 [CRUDApplication.Controllers.ProductController] INFO - Products retrieved successfully.
+15:13:13,580 [CRUDApplication.Controllers.ProductController] INFO - End time : 21-09-2023 15:13:13
+-------
+ Date : 15:21:01,073 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:INFO 
+ Message: This is the Get Id method. Start Time : 21-09-2023 15:20:56 
+ -------
+ Date : 15:21:01,191 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:INFO 
+ Message: Products retrieved successfully. 
+ -------
+ Date : 15:21:01,195 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:INFO 
+ Message: End time : 21-09-2023 15:21:01 
+ -------
+ Date : 15:24:50,514 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:INFO 
+ Message: This is the Get method. 
+ -------
+ Date : 15:24:50,641 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:WARN 
+ Message: No products found. 
+ -------
+ Date : 15:28:35,144 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:INFO 
+ Message: This is the Get Id method. Start Time : 21-09-2023 15:28:30 
+ -------
+ Date : 15:28:35,249 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:WARN 
+ Message: No products found. 
+ -------
+ Date : 15:29:16,044 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:INFO 
+ Message: This is the Get Id method. Start Time : 21-09-2023 15:29:14 
+ -------
+ Date : 15:29:18,530 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:WARN 
+ Message: No products found. 
+ -------
+ Date : 15:33:15,451 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:ERROR 
+ Message: An error occurred in the Get Id method. 
+ System.ArgumentException: The key value at position 0 of the call to 'DbSet<Product>.Find' was of type 'string', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(IKey key, Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at CRUDApplication.Controllers.ProductController.Get(Int32 id) in C:\Users\Admin\Desktop\CRUDApplication\CRUDApplication\Controllers\ProductController.cs:line 64
+-------
+ Date : 2023-09-21 15:37:22,928 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:INFO 
+ Message: This is the Get Id method. Start Time : 21-09-2023 15:37:21 
+ -------
+ Date : 2023-09-21 15:37:22,980 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:INFO 
+ Message: Products retrieved successfully. 
+ -------
+ Date : 2023-09-21 15:37:22,982 
+ APP: [CRUDApplication.Controllers.ProductController] 
+ Type:INFO 
+ Message: End time : 21-09-2023 15:37:22 
+ 
