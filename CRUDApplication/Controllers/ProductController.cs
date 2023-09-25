@@ -1,10 +1,12 @@
 ﻿using CRUDApplication.DAL;
 using CRUDApplication.Model;
 using log4net;
+using log4net.Config;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Logging;
+
 
 namespace CRUDApplication.Controllers
 {
@@ -12,12 +14,13 @@ namespace CRUDApplication.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private static readonly log4net.ILog log = LogManager.GetLogger(typeof(ProductController));
+       
+        private static readonly ILog log = LogManager.GetLogger(typeof(ProductController));
         //static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(ProductController));
         private readonly MyAppDbContext _appDbContext;
-
         public ProductController(MyAppDbContext appDbContext)
         {
+           
             // Assign the provided database context to the private field.
             _appDbContext = appDbContext;
            

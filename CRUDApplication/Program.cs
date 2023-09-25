@@ -1,9 +1,11 @@
 using CRUDApplication.DAL;
+using log4net.Config;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Log4Net.AspNetCore;
 
-[assembly:log4net.Config.XmlConfigurator(Watch = true)]
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -19,9 +21,7 @@ builder.Logging.ClearProviders();
 
 
 // initialize log4net
-log4net.Config.XmlConfigurator.Configure(new FileInfo("log4nets.config"));
-
-
+XmlConfigurator.Configure(new FileInfo("log4nets.config"));
 
 // Add services to the container.
 
@@ -47,7 +47,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-app.Logger.LogInformation("xxxxxx");
+app.Logger.LogInformation("hellooo");
 
 app.MapControllers();
 
